@@ -1,0 +1,16 @@
+{
+    "cardData": [
+        {
+            "id": 1,
+            "image": "Ahmedabad",
+            "placeName": "Surat",
+            "placeLocation": "Gujarat"
+        },
+        {
+            "id": 2,
+            "image": "Ahmedabad",
+            "placeName": "Ahmedabad",
+            "placeLocation": "Gujarat"
+        }
+    ]
+}

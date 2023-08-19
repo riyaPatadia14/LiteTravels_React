@@ -1,5 +1,5 @@
 const Index = {
-    Drawers: "/drawers",
+    Drawers: "/",
     Registration: "/registrations",
     Hotels: "/hotels",
     RentVehicles: "/rent-vehicles",

@@ -43,7 +43,7 @@ const Drawers = () => {
     { item: "VehicleLocation", link: "", icon: EmojiTransportationIcon },
     { item: "VisitPlaces", link: "", icon: TourRoundedIcon },
     { item: "Guides", link: "", icon: SignpostRoundedIcon },
-    { item: "Places", link: "/drawers/places", icon: AttractionsIcon },
+    { item: "Places", link: "/places", icon: AttractionsIcon },
     { item: "UserDashboards", link: "", icon: SpaceDashboardIcon },
     { item: "CardDetails", link: "", icon: CreditCardIcon },
     { item: "TransportMedium", link: "", icon: ModeOfTravelRoundedIcon },
@@ -78,26 +78,23 @@ const Drawers = () => {
               <Toolbar />
               <Box sx={{ overflow: 'auto' }}>
                 <List>
-                  {drawerList.map((text) => (
-                    <Link to={text.link}>
-                      <ListItem key={text} disablePadding>
+                  {drawerList.map((text, index) => (
+                    <ListItem key={index} disablePadding>
+                      <Link to={text.link} style={{ textDecoration: "none" }}>
                         <ListItemButton>
                           <ListItemIcon>
                             <text.icon />
                           </ListItemIcon>
                           <ListItemText primary={text.item} />
                         </ListItemButton>
-                      </ListItem>
-                    </Link>
+                      </Link>
+                    </ListItem>
                   ))}
                 </List>
                 <Divider />
               </Box>
             </Drawer>
             <Outlet />
-            {/* <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
-        <Toolbar />
-      </Box> */}
           </Box>
         </div>
       </div>

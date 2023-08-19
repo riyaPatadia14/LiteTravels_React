@@ -1,8 +1,8 @@
 const RentVehicles = () => {
     return (
-        <>
-        "dsbdsfn"
-        </>
+        <div>
+            "dsbdsfnsdddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+        </div>
     );
 }
 
